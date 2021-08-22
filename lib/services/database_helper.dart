@@ -78,7 +78,8 @@ class DatabaseHelper {
   Future<List<Note>> getNoteList() async {
     Database db = await instance.database;
     final List<Map<String, dynamic>> maps = await db.query(_tableName);
-
+    
+// Update note with image
     return List.generate(
       maps.length,
       (index) {
