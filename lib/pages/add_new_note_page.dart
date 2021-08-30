@@ -79,3 +79,4 @@ class AddNewNotePage extends StatelessWidget {
     );
   }
 }
+
